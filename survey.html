@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey</title>
+    <style>
+        body{
+           margin: 0;
+        }
+        .header{
+        background-color: rgb(0, 0, 0);
+        height: 70px;
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+        color: cornsilk;
+        line-height: 70px;
+    }
+    .main{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://media.istockphoto.com/photos/dark-navy-blue-stone-texture-background-top-view-copy-space-picture-id1255454241?b=1&k=20&m=1255454241&s=170667a&w=0&h=FBSFBXf_8l_jsjs_QEk0us40T7F7to9d4HO6yTC5oBI=");
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+    h2{
+        color: cornsilk;
+    }
+    .survey{
+        position: absolute;
+        box-shadow: 0 0 50px black;
+        width: 40%;
+        height: 85%;
+        margin-left:30%;
+        padding: 10px;
+    }
+    form{
+        font-size: 3vh;
+        color: white;
+    }
+    button{
+                background-color: cornsilk;
+                color:rgb(6, 6, 88);
+                font-size: 2vh;
+                height: 30px;
+                border-radius: 30px;
+                
+            }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Survey Form</h1>
+    </div> 
+    <di class="main">
+      <h2>"Hello! You will find delicious food here with peaceful environment"</h2>
+      <div class="survey">
+      <form>
+          <label>Name</label>
+          <input type="text" name="name" placeholder="Enter Your Name" pattern="[a-z]" /></br></br>
+          <label>Email</label>
+          <input type="email" placeholder="Enter Your Email" pattern=".+@gmail.com" required /></br></br>
+          <label>Gender</label>
+          <input type="radio" name="male" />Male 
+          <input type="radio" name="female" />Female </br></br>
+          <label for="selector">Food Quality</label>
+          <select id="selector">
+              <option value="excellent">Excellent</option>
+              <option value="good">Good</option>
+              <option value="poor">Poor</option>
+          </select></br></br>
+          <label for="choose">Service</label>
+          <select id="choose">
+              <option value="excellent">Excellent</option>
+              <option value="good">Good</option>
+              <option value="poor">Poor</option>
+          </select></br></br>
+        <label>Liked</label>
+        <input type="checkbox" name="pizza" />Pizza
+        <input type="checkbox" name="burger" />Burger
+        <input type="checkbox" name="ff" />French Fries </br></br>
+          <label for="clean">Cleaniness</label>
+          <select id="clean">
+              <option value="excellent">Excellent</option>
+              <option value="good">Good</option>
+              <option value="poor">Poor</option>
+          </select></br></br>
+          <label for="value">Overall Value</label>
+          <select id="value">
+              <option value="excellent">Excellent</option>
+              <option value="good">Good</option>
+              <option value="poor">Poor</option>
+          </select></br></br>
+          <label>Feedback</label>
+          <textarea rows="10" cols="30" name="feedback">Give Your Feedback......</textarea></br></br>
+          <button>Reset</button>
+          <button>Submit</button>
+      </form>
+    </div>
+    </div>
+</body>
+</html>
